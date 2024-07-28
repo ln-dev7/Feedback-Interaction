@@ -9,22 +9,57 @@
 </head>
 
 <body>
-  <div class="relative w-full h-screen overflow-hidden" id="app">
-    <div class="absolute top-0 w-full flex items-center justify-between py-2 px-6 bg-black text-white font-semibold">
-      <a class="underline underline-offset-2" href="https://ui.lndev.me">
-        Code by LN
-      </a>
-      <a class="underline underline-offset-2" href="https://github.com/ln-dev7/">
-        GitHub
-      </a>
-      <a class="underline underline-offset-2" href="#">
-        Figma
-      </a>
-    </div>
-    <div class="w-full h-full flex items-center justify-center p-4">
-      <h1 className="text-3xl font-bold underline">
-        FUN ANIMATION TEMPLATE
-      </h1>
+  <div class="relative flex items-center justify-center w-full h-screen overflow-hidden bg-[#fc7359] bg" id="app">
+    <div class="w-[400px] h-full flex flex-col items-center justify-center p-4">
+      <h3 class="font-semibold text-center text-xl w-72 text-[#790b02] mb-10 title">
+        How was your shopping experience?
+      </h3>
+      <div class="flex flex-col items-center justify-center h-[176px]">
+        <div class="flex items-center justify-center gap-8">
+          <div class="w-14 h-14 bg-[#790b02] rounded-full eye"></div>
+          <div class="w-14 h-14 bg-[#790b02] rounded-full eye"></div>
+        </div>
+        <div class="w-14 h-14 flex items-center justify-center rotate-180 smile">
+          <svg width="431" height="241" viewBox="0 0 431 241" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M25.9742 0C39.941 0 51.2634 11.3183 51.2634 25.2802C51.2634 116.032 124.859 189.601 215.643 189.601C306.427 189.601 380.023 116.032 380.023 25.2802C380.023 11.3183 391.345 0 405.312 0C419.279 0 430.601 11.3183 430.601 25.2802C430.601 143.956 334.361 240.162 215.643 240.162C96.925 240.162 0.685059 143.956 0.685059 25.2802C0.685059 11.3183 12.0074 0 25.9742 0Z"
+              fill="#790b02" />
+          </svg>
+        </div>
+      </div>
+      <div class="flex items-center justify-start w-full pb-14 pt-7 note-container">
+        <div class="flex items-center justify-center w-full note shrink-0">
+          <h1 class="font-black text-7xl text-[#e33719]">BAD</h1>
+        </div>
+        <div class="flex items-center justify-center w-full note shrink-0 opacity-0">
+          <h1 class="font-black text-7xl text-[#b37716]">NOT BAD</h1>
+        </div>
+        <div class="flex items-center justify-center w-full note shrink-0 opacity-0">
+          <h1 class="font-black text-7xl text-[#6e901d]">GOOD</h1>
+        </div>
+      </div>
+      <div class="w-full">
+        <div class="relative flex items-center justify-between w-full">
+          <button class="w-6 h-6 rounded-full bg-[#fc5b3e] z-[2] button color"></button>
+          <button class="w-6 h-6 rounded-full bg-[#fc5b3e] z-[2] button color"></button>
+          <button class="w-6 h-6 rounded-full bg-[#fc5b3e] z-[2] button color"></button>
+          <div class="h-1 w-full absolute top-1/2 -translate-y-1/2 bg-[#fc5b3e] color"></div>
+          <div
+            class="indicator flex items-center justify-center rounded-full w-10 h-10 bg-[#790b02] p-2 absolute left-4 z-[3] -translate-x-1/2 rotate-180">
+            <svg class="pt-1" width="431" height="241" viewBox="0 0 431 241" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M25.9742 0C39.941 0 51.2634 11.3183 51.2634 25.2802C51.2634 116.032 124.859 189.601 215.643 189.601C306.427 189.601 380.023 116.032 380.023 25.2802C380.023 11.3183 391.345 0 405.312 0C419.279 0 430.601 11.3183 430.601 25.2802C430.601 143.956 334.361 240.162 215.643 240.162C96.925 240.162 0.685059 143.956 0.685059 25.2802C0.685059 11.3183 12.0074 0 25.9742 0Z"
+                fill="#fc7359" />
+            </svg>
+          </div>
+        </div>
+        <div class="flex items-center justify-between w-full pt-6">
+          <span class="w-96 text-left font-medium text-[#790b02] text">Bad</span>
+          <span class="w-96 text-center font-medium opacity-60 text-[#790b02] text">Not Bad</span>
+          <span class="w-96 text-right font-medium opacity-60 text-[#790b02] text">Good</span>
+        </div>
+      </div>
     </div>
   </div>
   <script type="module" src="/main.js"></script>
